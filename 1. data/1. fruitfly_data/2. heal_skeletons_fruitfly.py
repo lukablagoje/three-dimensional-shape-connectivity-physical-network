@@ -8,26 +8,26 @@ import itertools
 from neuprint import fetch_roi_hierarchy
 import networkx as nx
 from scipy.spatial import distance
-#skeletons_dict = {1:'POC_96', 4: 'GF(R)_10',3:'mALT(L)_20',2:'GC_28'}
+
 skeletons_dict = {1:'POC_96', 4: 'GF(R)_10',3:'mALT(L)_20',2:'GC_28'}
 path_source = '1. neuron_regions_skeleton/'
-path_save = '2. healed_neuron_skeletons/'
+path_save = ''#'2. healed_neuron_skeletons/'
 for df_index,skeleton_region in skeletons_dict.items():
     #skeleton_region = 'ME(R)_3721'
     df = pd.read_csv(path_source + skeleton_region + '.csv',index_col=[0])
     name = skeleton_region
     #df = pd.read_csv(path_source+ name_original,delimiter=' ')
-    segments = df[['link','rowId','bodyId']]
-    segments.rename(columns = {'link':'pt_id1', 'rowId':'pt_id2'}, inplace = True)
+    segments = df[['link','rowId','bodyId']].copy()
+    segments = segments.rename(columns = {'link':'pt_id1', 'rowId':'pt_id2'})
     segments = segments[(segments['pt_id1'] != -1) & (segments['pt_id2'] != -1)]
     segments.reset_index(inplace=True)
-    segments.rename(columns = {'level_0':'seg_id'}, inplace = True)
+    segments = segments.rename(columns = {'level_0':'seg_id'})
     segments.drop(['index'],inplace=True,axis=1)
     #segments.set_index(['seg_id'],inplace=True)
     #segments.to_csv(path + name + '.segments.csv')
 
-    points = df[['rowId','x','y','z','radius','bodyId']]
-    points.rename(columns = {'rowId':'pt_id'}, inplace = True)
+    points = df[['rowId','x','y','z','radius','bodyId']].copy()
+    points = points.rename(columns = {'rowId':'pt_id'})
     points['diameter'] = points['radius'] * 2
     points.reset_index()
     #points.to_csv(path + name+'.points.csv')
@@ -36,7 +36,7 @@ for df_index,skeleton_region in skeletons_dict.items():
     healed_list_segments = []
     healed_list_points = []
     for i,bodyid in enumerate(list(set(segments['bodyId'].values))):
-        print(i,len(list(set(segments['bodyId'].values))))
+        print('Neuron number',i,'out of',len(list(set(segments['bodyId'].values))))
         segments_df = segments[segments['bodyId'] == bodyid].copy()
         points_df = points[points['bodyId'] == bodyid].copy()
         disconnected_skeleton = True
@@ -111,7 +111,7 @@ for df_index,skeleton_region in skeletons_dict.items():
                 node_2 = node_pair[1]
                 row = [node_1] + list(node_coordinate_radius_dict[node_1]) + [node_2] + list(node_coordinate_radius_dict[node_2])
                 row = pd.DataFrame({'pt_id1':[node_1],'pt_id2':[node_2]},index=[np.max(segments_df.index) +1])
-                segments_df = segments_df.append(row)
+                segments_df = pd.concat([segments_df, row], axis=0)
         print('Healing complete')
         segments_df['bodyId'] = bodyid
         segments_df['seg_id'] = np.arange(0,len(segments_df))
