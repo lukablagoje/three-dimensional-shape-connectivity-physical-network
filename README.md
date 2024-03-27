@@ -15,13 +15,13 @@ arXiv link: [https://arxiv.org/abs/2211.13265](https://arxiv.org/abs/2211.13265)
 # Technical project overview
 This project is divided into four different parts:
 
-[**1. data**](https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/blob/main/1.%20obtain_neuron_skeletons.ipynb) -First, I  accessed and downloaded the neuron skeleton data, which was further processed to obtain a dataset composed only of points (point clouds).
+[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) -First, I  accessed and downloaded the neuron skeleton data, which was further processed to obtain a dataset composed only of points (point clouds).
 
-[**2. basic_measures**](https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/blob/main/2.%20creating_querying_labeled_kd_trees.ipynb) Second, I develop an algorithm that creates a labeled point cloud, which is stored in the k-d tree, allowing for efficient search of spatial neighbors, with labeling included (as scipy.spatial k-d trees work with unlabeled points).
+[**2. basic_measures**]([https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/blob/main/2.%20creating_querying_labeled_kd_trees.ipynb](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/2.%20basic_measures)) Second, I develop an algorithm that creates a labeled point cloud, which is stored in the k-d tree, allowing for efficient search of spatial neighbors, with labeling included (as scipy.spatial k-d trees work with unlabeled points).
 
-[**3. abstract_network**](https://github.com/lukablagoje/understanding-the-impact-of-physicality-on-network-structure/blob/main/3.%20weighted_metagraph_results.ipynb) - Finally, I apply the labeled point cloud algorithm to find the number of physically close neurons (objects) as their radial thickness is increased, both for individual neurons and all neurons in the dataset at once.
+[**3. abstract_network**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/3.%20abstract_network)- Finally, I apply the labeled point cloud algorithm to find the number of physically close neurons (objects) as their radial thickness is increased, both for individual neurons and all neurons in the dataset at once.
 
-[**4. link_confinement_measure**](https://github.com/lukablagoje/understanding-the-impact-of-physicality-on-network-structure/blob/main/3.%20weighted_metagraph_results.ipynb) - Finally, I apply the labeled point cloud algorithm to find the number of physically close neurons (objects) as their radial thickness is increased, both for individual neurons and all neurons in the dataset at once.
+[**4. link_confinement_measure**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/4.%20link_confinement_measure) - Finally, I apply the labeled point cloud algorithm to find the number of physically close neurons (objects) as their radial thickness is increased, both for individual neurons and all neurons in the dataset at once.
 
 # Data
 [**neuron_regions_information**](https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/tree/main/neuron_regions_information) - Folder for storing information about the neurons in specific regions, which are in CSV format.
