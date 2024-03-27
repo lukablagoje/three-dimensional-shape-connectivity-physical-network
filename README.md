@@ -15,7 +15,7 @@ arXiv link: [https://arxiv.org/abs/2211.13265](https://arxiv.org/abs/2211.13265)
 # Technical project overview
 This project is divided into four different parts:
 
-[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) -First, I  accessed and downloaded the neuron skeleton data, which was further processed to obtain a dataset composed only of points (point clouds).
+[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) - I perform data processing of physical network skeletons, where I perform skeleton healing and remove redundancies in the physical structure. There is a more detailed set of notebooks where I query and download neurons and connect them via their synapses to form a single network.
 
 [**2. basic_measures**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/2.%20basic_measures) Second, I develop an algorithm that creates a labeled point cloud, which is stored in the k-d tree, allowing for efficient search of spatial neighbors, with labeling included (as scipy.spatial k-d trees work with unlabeled points).
 
