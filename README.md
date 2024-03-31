@@ -18,15 +18,8 @@ This project is divided into four different parts:
 [**4. link_confinement_measure**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/4.%20link_confinement_measure) - I apply collision detection algorithms to compute a link-level measure of local confinement.
 
 # Data
-[**neuron_regions_information**](https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/tree/main/neuron_regions_information) - Folder for storing information about the neurons in specific regions, which are in CSV format.
-
-[**neuron_regions_points**](https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/tree/main/neuron_regions_points) - Folder for storing point clouds of neuron data, which are in CSV format.
-
-[**querying results**](https://github.com/lukablagoje/the-impact-of-physicality-on-network-structure/tree/main/querying_results) - Folder for storing labeled kd-tree results, which are in pickle format (the number in the filename represents querying radius)
-
 To access the original fruit-fly data, you will need to use the Python library provided by the Janelia project, which you can install from https://pypi.org/project/neuprint-python/
 
 Neuron data is downloaded from here: https://neuromorpho.org/
 
-
-
+Other datasets are available upon request.
