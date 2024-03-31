@@ -9,7 +9,7 @@ arXiv link: [https://arxiv.org/abs/2211.13265](https://arxiv.org/abs/2403.19333)
 # Technical project overview
 This project is divided into four different parts:
 
-[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) - I perform data processing of physical network skeletons, where I perform skeleton healing and remove redundancies in the physical structure. There is a more detailed set of notebooks where I query and download neurons and connect them via their synapses to form a single network.
+[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) - I perform data processing of physical network skeletons, where I perform skeleton healing and remove redundancies in the physical structure.
 
 [**2. basic_measures**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/2.%20basic_measures) - I consider physical aspects of my data, so I analyze their fractal dimension and space-filling properties (physical density).
 
