@@ -20,9 +20,13 @@ This project is divided into four different parts:
 # Data
 ### Individual biological neuron datasets
 https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF - zebrafish_neuron
+
 https://neuromorpho.org/neuron_info.jsp?neuron_name=VPM_1 - rat_neuron
+
 https://neuromorpho.org/neuron_info.jsp?neuron_name=H16-06-010-01-03-04-01_566350716_m - human_neuron
+
 https://neuromorpho.org/neuron_info.jsp?neuron_name=Dec15IR2e_y_morph - monkey_neuron
+
 ## Fruit fly biological neural network datasets
 To access the original fruit-fly data, you will need to use the Python library provided by the Janelia project, which you can install from https://pypi.org/project/neuprint-python/
 
