@@ -9,7 +9,7 @@ arXiv link: [https://arxiv.org/abs/2211.13265](https://arxiv.org/abs/2403.19333)
 # Technical project overview
 This project is divided into four different parts:
 
-[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) - I perform data processing of physical network skeletons, where I perform skeleton healing and remove redundancies in the physical structure. There is a more detailed set of notebooks where I query and download neurons and connect them via their synapses to form a single network.
+[**1. data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/1.%20data) - I perform data processing of physical network skeletons, where I perform skeleton healing and remove redundancies in the physical structure.
 
 [**2. basic_measures**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/2.%20basic_measures) - I consider physical aspects of my data, so I analyze their fractal dimension and space-filling properties (physical density).
 
@@ -18,6 +18,16 @@ This project is divided into four different parts:
 [**4. link_confinement_measure**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/4.%20link_confinement_measure) - I apply collision detection algorithms to compute a link-level measure of local confinement.
 
 # Data
+### Individual biological neuron datasets
+https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF - zebrafish_neuron
+
+https://neuromorpho.org/neuron_info.jsp?neuron_name=VPM_1 - rat_neuron
+
+https://neuromorpho.org/neuron_info.jsp?neuron_name=H16-06-010-01-03-04-01_566350716_m - human_neuron
+
+https://neuromorpho.org/neuron_info.jsp?neuron_name=Dec15IR2e_y_morph - monkey_neuron
+
+## Fruit fly biological neural network datasets
 To access the original fruit-fly data, you will need to use the Python library provided by the Janelia project, which you can install from https://pypi.org/project/neuprint-python/
 
 Neuron data is downloaded from here: https://neuromorpho.org/
