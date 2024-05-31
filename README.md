@@ -19,6 +19,7 @@ This project is divided into four different parts:
 
 # Data
 ### Individual biological neuron datasets
+Raw SWC format data is available below:
 https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF - zebrafish_neuron
 
 https://neuromorpho.org/neuron_info.jsp?neuron_name=VPM_1 - rat_neuron
