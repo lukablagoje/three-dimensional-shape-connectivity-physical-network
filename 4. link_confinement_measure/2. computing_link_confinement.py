@@ -3,17 +3,17 @@ import numpy as np
 import pickle
 
 # Define a list of names for networks to analyze.
-name_list = ['human_neuron', 'rat_neuron', 'monkey_neuron', 'zebrafish_neuron', 'vascular_2', 'vascular_3', 'vascular_1', 'mitochondrial', 'root_1', 'root_2', 'anthill']
+name_list = ['fruit_fly_1']
 
 # Specify the path where the results will be saved.
-path_save = '2. directed_metagraph_weights/'
+path_source = "1. collision_results/"
+path_save = '2. link_confinement_measure/'
 
 # Loop through each network name to process.
 for name in name_list:
     print(name)
     
     # Load the directed metagraph results for the current network.
-    path_source = "1. directed_metagraph_results/"
     infile = open(path_source + name + "_directed_metagraph_dict_results.pkl", 'rb')
     intersection_metagraph = pickle.load(infile)
 
@@ -24,15 +24,15 @@ for name in name_list:
     out_degree_weight_sum = {}
     
     # Calculate out-degree and in-degree weights for each path in the metagraph.
-    for t, trials in intersection_metagraph.items():
-        for trial, paths in trials.items():
-            for path_id_1, connected_paths in paths.items():
-                out_degree_weight_sum[path_id_1] = out_degree_weight_sum.get(path_id_1, 0) + len(connected_paths)
-                for path_id_2 in connected_paths:
-                    in_degree_weight_sum[path_id_2] = in_degree_weight_sum.get(path_id_2, 0) + 1
+
+    for trial, paths in  intersection_metagraph.items():
+        for path_id_1, connected_paths in paths.items():
+            out_degree_weight_sum[path_id_1] = out_degree_weight_sum.get(path_id_1, 0) + len(connected_paths)
+            for path_id_2 in connected_paths:
+                in_degree_weight_sum[path_id_2] = in_degree_weight_sum.get(path_id_2, 0) + 1
 
     # Normalize the in-degree and out-degree weights by the number of trials.
-    nr_trials = len(intersection_metagraph[t].keys())
+    nr_trials = len(intersection_metagraph.keys())
     for path_id in out_degree_weight_sum:
         out_degree_weight_sum[path_id] /= nr_trials
     for path_id in in_degree_weight_sum:

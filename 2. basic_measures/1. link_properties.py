@@ -13,8 +13,9 @@ from physical_properties_functions import *
 
 
 # Loop through each network name and perform computations
-name_list = ['human_neuron','rat_neuron',
-           'monkey_neuron','zebrafish_neuron', 'vascular_2','vascular_3','vascular_1','mitochondrial','anthill','root_1','root_2','fruit_fly_2','fruit_fly_3','fruit_fly_1','fruit_fly_4']
+name_list =['root_1', 'root_2', 'human_neuron', 'zebrafish_neuron', 'monkey_neuron',
+             'rat_neuron', 'anthill', 'vascular_1', 'vascular_2', 'vascular_3',
+             'mitochondrial', 'fruit_fly_1', 'fruit_fly_2', 'fruit_fly_3', 'fruit_fly_4']
 final_results = {}
 
 for name in name_list:
@@ -40,5 +41,5 @@ for name in name_list:
     final_results[name].update(compute_complementary_straightness(skeleton_paths))
 
     # Save the updated results to a pickle file
-    with open(f"0. link_properties/{name}_basic_results.pkl", "wb") as h:
+    with open(f"0. link_properties/{name}_fractal_dimension_results.pkl", "wb") as h:
         pickle.dump(final_results[name], h)
