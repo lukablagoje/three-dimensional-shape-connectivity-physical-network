@@ -21,7 +21,7 @@ This project is divided into four different parts:
 
 All processed datasets are available upon request, as I cannot host them on GitHub. If you are interested in the data before processing, please take a look at the subsections below:
 
-### Individual biological neuron datasets
+## Individual biological neuron datasets
 Raw SWC format data is available:
 
 https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF - zebrafish_neuron
