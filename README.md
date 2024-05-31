@@ -18,8 +18,11 @@ This project is divided into four different parts:
 [**4. link_confinement_measure**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/4.%20link_confinement_measure) - I apply collision detection algorithms to compute a link-level measure of local confinement.
 
 # Data
+
+All processed datasets are available upon request, as I cannot host them on GitHub. If you are interested in the data before processing, please take a look at the subsections below:
+
 ### Individual biological neuron datasets
-Raw SWC format data is available below:
+Raw SWC format data is available:
 
 https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF - zebrafish_neuron
 
@@ -33,5 +36,3 @@ https://neuromorpho.org/neuron_info.jsp?neuron_name=Dec15IR2e_y_morph - monkey_n
 To access the original fruit-fly data, you will need to use the Python library provided by the Janelia project, which you can install from https://pypi.org/project/neuprint-python/
 
 Neuron data is downloaded from here: https://neuromorpho.org/
-
-Other datasets are available upon request.
