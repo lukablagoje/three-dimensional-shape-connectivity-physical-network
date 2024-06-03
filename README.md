@@ -23,15 +23,15 @@ All processed datasets are available here [**3. final data**](https://github.com
 If you are interested in the data before processing, please take a look at the subsections below:
 
 ## Individual biological neuron datasets
-Raw SWC format data is available:
+Raw SWC (tree) format data:
 
-https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF - zebrafish_neuron
+[https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF](https://neuromorpho.org/neuron_info.jsp?neuron_name=20Nov2007-3-ON-OFF) - zebrafish_neuron
 
-https://neuromorpho.org/neuron_info.jsp?neuron_name=VPM_1 - rat_neuron
+[https://neuromorpho.org/neuron_info.jsp?neuron_name=VPM_1](https://neuromorpho.org/neuron_info.jsp?neuron_name=VPM_1) - rat_neuron
 
-https://neuromorpho.org/neuron_info.jsp?neuron_name=H16-06-010-01-03-04-01_566350716_m - human_neuron
+[https://neuromorpho.org/neuron_info.jsp?neuron_name=H16-06-010-01-03-04-01_566350716_m](https://neuromorpho.org/neuron_info.jsp?neuron_name=H16-06-010-01-03-04-01_566350716_m) - human_neuron
 
-https://neuromorpho.org/neuron_info.jsp?neuron_name=Dec15IR2e_y_morph - monkey_neuron
+[https://neuromorpho.org/neuron_info.jsp?neuron_name=Dec15IR2e_y_morph](https://neuromorpho.org/neuron_info.jsp?neuron_name=Dec15IR2e_y_morph) - monkey_neuron
 
 ## Fruit fly biological neural network datasets
 To access the original fruit-fly data, you will need to use the Python library provided by the Janelia project, which you can install from https://pypi.org/project/neuprint-python/
