@@ -19,6 +19,7 @@ This project is divided into four different parts:
 
 # Data
 All processed datasets can be accessed here: [**1. data/ 3. final data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-network/tree/main/1.%20data/3.%20final_data)
+
 If you want to construct a skeleton graph, use pt_id_1 and pt_id_2 columns as an edge list. If you want to construct an abstract network graph, use source and target columns as an edge list.
 
 If you are interested in the raw data (before processing), please take a look at the supplemental information of the article.
