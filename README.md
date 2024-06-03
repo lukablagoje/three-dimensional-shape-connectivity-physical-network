@@ -20,4 +20,4 @@ This project is divided into four different parts:
 # Data
 All processed datasets can be accessed here: [**1. data/ 3. final data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-network/tree/main/1.%20data/3.%20final_data)
 
-If you are interested in the raw data (before processing), please take a look at the supplemental information file of the paper for references and sources.
+If you are interested in the raw data (before processing), please take a look at the supplemental information of the article.
