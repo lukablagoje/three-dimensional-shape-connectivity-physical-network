@@ -18,8 +18,9 @@ This project is divided into four different parts:
 [**4. link_confinement_measure**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-networks/tree/main/4.%20link_confinement_measure) - I apply collision detection algorithms to compute a link-level measure of local confinement.
 
 # Data
+All processed datasets are available here [**3. final data**](https://github.com/lukablagoje/three-dimensional-shape-connectivity-physical-network/tree/main/1.%20data/3.%20final_data).
 
-All processed datasets are available upon request, as I cannot host them on GitHub. If you are interested in the data before processing, please take a look at the subsections below:
+If you are interested in the data before processing, please take a look at the subsections below:
 
 ## Individual biological neuron datasets
 Raw SWC format data is available:
